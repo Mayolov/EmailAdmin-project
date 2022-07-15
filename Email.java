@@ -2,6 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Email {
+    // Fields
     private String firstName;
     private String lastName;
     private String password;
@@ -41,7 +42,7 @@ public class Email {
         return new String(password);
     }
 
-    // Ask department
+    // Ask user their department
     private String setDepartment() {
         System.out.println("New employee " + firstName
                 + "Enter department Code: \n1 for Sales \n2 for Development \n3 for accounting\n0 for none");
@@ -59,7 +60,7 @@ public class Email {
         }
     }
 
-    // set mailbox cap
+    // set mailbox storage capacity
     public void setMailBoxCapacity(int capacity) {
         this.mailboxCapacity = capacity;
     }
